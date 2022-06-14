@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9aa07d589f.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js" defer></script>
+    <title>Shopping</title>
+</head>
+
+<body>
+    <section id="js--checkoutWindow" class="checkout a-animatie">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img src="/img/blog.jpg" alt="" class="checkout__image">
+                <p class="checkout__title">Blog</p>
+                <p id="js--amount-blog" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/dashboard.png" alt="" class="checkout__image">
+                <p class="checkout__title">Dashboard</p>
+                <p id="js--amount-dashboard" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/japan.jpg" alt="" class="checkout__image">
+                <p class="checkout__title">Japan Musea</p>
+                <p id="js--amount-japan" class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-animatie" id="js--shoppingModal">
+        &#10003;Added to Cart
+    </article>
+    <button id="js--checkoutButton" class="shoppingCart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="games">
+            <li class="games__game a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/blog.jpg" alt="Buzzy Lightyear van de aldora shop " class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€19,-</h2>
+                    <h3 class="games__h3">Blog</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;</div>
+                    <button data-product="blog" class="games__button">Add to Cart</button>
+                </section>
+
+            </li>
+            <li class="games__game a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/dashboard.png" alt="C3PO beeldje" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <s>€49</s>
+                    <h2 class="games__h2">€39,-</h2>
+                    <h3 class="games__h3">Dashboard</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="dashboard" class="games__button">Add to cart</button>
+                </section>
+            </li>
+
+            <li class="games__game games__game--third a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/japan.jpg" alt="De ironman beeldje" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€49,-</h2>
+                    <h3 class="games__h3">Japan Musea</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="japan" class="games__button">Add to cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
